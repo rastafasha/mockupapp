@@ -1,0 +1,384 @@
+.home,
+.listhorizontal,
+.slider-inicio,
+.user-document,
+.user,
+.wallet,
+.lawyer-profile,
+.search,
+.favorites {
+    background-color: var(--grisfondo);
+}
+
+.home .areagris,
+.user-document .areagris,
+.user .areagris,
+.wallet .areagris,
+.lawyer-profile .areagris,
+.search .areagris,
+.favorites .areagris {
+    background-color: var(--grisfondo);
+    height: calc(100vh);
+    min-height: auto;
+    padding-bottom: 0px;
+    padding: 0px !important;
+    position: relative;
+    z-index: 0;
+}
+
+.home .areablanc-interna,
+.user-document .areablanc-interna,
+.user .areablanc-interna,
+.wallet .areablanc-interna,
+.lawyer-profile .areablanc-interna,
+.search .areablanc-interna,
+.favorites .areablanc-interna {
+    height: calc(90vh);
+    border-radius: 30px 30px 0px 0px;
+    padding-top: 20px;
+    overflow: hidden;
+    position: fixed;
+    margin-top: 0px;
+    width: 100%;
+    z-index: 3;
+    top: 70px;
+}
+
+.home .post .group,
+.lawyer-profile .post .group,
+.search .post .group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: 80px 1fr; */
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    padding: 10px;
+    height: 90px;
+}
+
+.user .group,
+.lawyer-profile .group,
+.wallet .group {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.banner-rectangular {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    padding: 2px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner-rectangular img {
+    width: 100%;
+    height: 100%;
+}
+
+.favorites .post .group .foto .post-date,
+.search .post .group .foto .post-date,
+.home .post .group .foto .post-date {
+    margin-bottom: 0px;
+}
+
+.favorites .post .group .foto img,
+.search .post .group .foto img,
+.home .post .group .foto img {
+    width: 90%;
+    margin: 5px;
+    border: 1px solid var(--grisclaro);
+}
+
+.home .info,
+.search .info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.wallet .div1 p,
+.lawyer-profile .div1 p,
+.user .div1 p {
+    padding: 0px;
+    margin: 0px;
+    font-size: 3.5vw;
+}
+
+.div-responsive2 {
+    display: none;
+}
+
+.user .post-inner,
+.lawyer-profile .post-inner,
+.favorites .post-inner,
+.search .post-inner,
+.user-document .post-inner {
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 95%;
+    height: 400px;
+    padding-bottom: 60px;
+}
+
+.wallet .itemFav img,
+.user .itemFav img {
+    width: 80%;
+    padding: 5px;
+    border: 1px solid rgb(231, 231, 231);
+    background-color: #fafafa;
+    border-radius: 13px;
+    box-shadow: 0px 7px 10px #e3e2e2;
+}
+
+.lawyer-profile .itemFav .fa,
+.wallet .itemFav .fa,
+.user .itemFav .fa {
+    width: 80%;
+    padding: 5px;
+    border-radius: 13px;
+    font-size: 2.5em;
+    text-align: center;
+    color: var(--grisfondo);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+
+.scrollable {
+    overflow: scroll;
+    overflow-y: scroll;
+    position: fixed;
+    padding-right: 15px;
+    width: 97%;
+    height: 460px;
+    min-height: 280px;
+    padding-bottom: 150px;
+    padding-top: 20px;
+    margin-top: -20px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.categorylist {}
+
+.categorylist {
+    grid-auto-columns: calc(44% - (var(--swiffy-slider-item-gap)/ 2) - 2.5rem)!important;
+    margin-bottom: 0px !important;
+}
+
+.categorylist h2 {
+    font-size: 14px;
+    background-color: #f2f2f2;
+    padding: 5px;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+}
+
+@media (min-width: 768px) {
+    .stars .fa {
+        font-size: 1vw;
+    }
+    .post .group .info h2 {
+        font-size: 1vw;
+    }
+    .post .group .info h3 {
+        font-size: 1vw;
+    }
+    .div-responsive1 {
+        grid-area: 1 / 1 / 3 / 3;
+        padding: 40px;
+    }
+    .div-responsive2 {
+        display: block;
+        grid-area: 1 / 3 / 3 / 4;
+    }
+    .lateral {
+        height: 85vh;
+        background-color: rgba(239, 238, 238, 0.281);
+        border-top-right-radius: 30px;
+        padding: 5px;
+    }
+    .lateral .group,
+    .user .lateral .group,
+    .home .lateral .group,
+    .search .lateral .group,
+    .favorites .lateral .group,
+    .wallet .lateral .group {
+        width: 100%;
+        display: grid;
+        float: left;
+        background-color: var(--blanco);
+    }
+    .banner-c {
+        width: 420px;
+        height: 420px;
+        overflow: hidden;
+        border: 1px solid #333;
+        margin: auto;
+    }
+    .banner-c img {
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .admin-services {
+        width: 40%;
+        display: grid;
+        margin-bottom: 150px;
+    }
+    .user .areablanc-interna,
+    .home .areablanc-interna,
+    .search .areablanc-interna,
+    .favorites .areablanc-interna,
+    .wallet .areablanc-interna {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 100vw;
+        position: relative;
+        left: calc(0%);
+    }
+    .user .group {
+        width: 50%;
+        display: grid;
+        float: left;
+    }
+    .user .div1 p,
+    .home .div1 p,
+    .search .div1 p,
+    .favorites .div1 p,
+    .wallet .div1 p {
+        padding: 0px;
+        margin: 0px;
+        font-size: 1.5vw;
+    }
+    .user .post-inner,
+    .home .post-inner,
+    .search .post-inner,
+    .favorites .post-inner,
+    .wallet .post-inner {
+        margin-left: 0%;
+    }
+    .user .lateral .itemFav img,
+    .home .lateral .itemFav img,
+    .search .lateral .itemFav img,
+    .favorites .lateral .itemFav img,
+    .wallet .lateral .itemFav img {
+        width: 80%;
+        padding: 5px;
+        border: 1px solid rgb(231, 231, 231);
+        background-color: #fafafa;
+        border-radius: 13px;
+        box-shadow: 0px 7px 10px #e3e2e2;
+    }
+    .user .post-inner,
+    .home .post-inner,
+    .favorites .post-inner,
+    .wallet .post-inner,
+    .search .post-inner {
+        overflow: hidden;
+        overflow-y: scroll;
+        position: fixed;
+        padding-right: 40px;
+        width: calc(60%);
+        height: 75vh;
+        padding-bottom: 150px;
+        margin-top: 30px;
+    }
+    .lateral .itemFav {
+        display: grid;
+        cursor: pointer;
+        grid-template-columns: 150px 1fr;
+    }
+    .favorites .itemFav {
+        display: grid;
+        cursor: pointer;
+        grid-template-columns: 150px 1fr;
+    }
+    .favorites .itemFav img {
+        width: 80%;
+        padding: 5px;
+        border: 1px solid rgb(231, 231, 231);
+        background-color: #fafafa;
+        border-radius: 13px;
+        box-shadow: 0px 7px 10px #e3e2e2;
+    }
+    .home .post .group,
+    .search .post .group,
+    .favorites .post .group,
+    .post .group {
+        display: grid;
+        gap: 1rem;
+        grid-auto-rows: 7rem;
+        grid-template-columns: repeat(4, minmax(calc(180px), 1fr));
+    }
+    .favorites .post .group .foto,
+    .search .post .group .foto {
+        margin-bottom: 20px;
+        height: 110px;
+    }
+    .favorites .post .group .foto .post-date,
+    .search .post .group .foto .post-date,
+    .home .post .group .foto .post-date {
+        margin-bottom: 0px;
+        width: 70%;
+    }
+    .home .post .group,
+    .search .post .group,
+    .favorites .post .group,
+    .post .group {
+        display: grid;
+        gap: 1rem;
+        grid-auto-rows: 10rem;
+        position: relative;
+        width: 70%;
+        grid-template-columns: repeat(4, minmax(calc(180px), 1fr));
+    }
+    .div-group {
+        height: 200px;
+    }
+    .home .areagris,
+    .user-document .areagris,
+    .user .areagris,
+    .wallet .areagris,
+    .lawyer-profile .areagris,
+    .search .areagris,
+    .favorites .areagris {
+        height: auto;
+    }
+    .wallet .paggrop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        gap: 2rem;
+        padding-bottom: 60px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .banner-c {
+        width: 290px;
+        height: 290px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .banner-c {
+        width: 420px;
+        height: 420px;
+    }
+}

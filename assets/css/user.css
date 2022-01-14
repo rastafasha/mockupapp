@@ -1,0 +1,149 @@
+.user .post-inner {
+    overflow: hidden;
+    overflow: scroll;
+    overflow-x: scroll;
+    position: fixed;
+    padding-right: 40px;
+    width: auto;
+    height: 280px;
+    padding-bottom: 150px;
+    margin-top: 30px;
+}
+
+.user-document .itemFav img {
+    width: 30%;
+    padding: 5px;
+    border: 1px solid rgb(231, 231, 231);
+    background-color: #fafafa;
+    border-radius: 13px;
+    box-shadow: 0px 7px 10px #e3e2e2;
+}
+
+.user-document .itemFav .fa {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    background-color: #fafafa;
+    border-radius: 13px;
+    font-size: 12vw;
+    margin-right: 5px;
+    color: var(--red);
+}
+
+.user-document .itemFav p {
+    width: 90%;
+    display: flex;
+    font-size: 3vw;
+}
+
+.user-document .itemFav {
+    border-bottom: 1px solid var(--blanco);
+    box-shadow: var(--shadow);
+    height: 80px;
+}
+
+.user .form {
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+}
+
+.user .form img {
+    width: 60%;
+    margin: auto;
+    display: block;
+}
+
+.user .form input[type="text"] {
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid var(--grisclaro);
+    padding: 3px;
+}
+
+.admin-services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.user-document .admin-services {
+    height: 70px;
+}
+
+.admin-services a,
+.admin-services p,
+.admin-services i {
+    color: var(--grisfondo);
+}
+
+.option-admin {
+    display: grid;
+    justify-items: center;
+}
+
+.option-admin i,
+.option-admin p {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+}
+
+.option-admin i {
+    font-size: 1.6em;
+    border: 1px solid var(--red);
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    padding: 5px;
+}
+
+.option-admin p {
+    font-size: 0.8em;
+}
+
+.carpetas {
+    display: grid;
+    gap: 1em;
+}
+
+.folder-info {
+    box-shadow: var(--shadow);
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: content-box;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.menu-opt {
+    display: flex;
+    float: right;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-items: end;
+}
+
+.folder-info h2 {
+    font-size: 16px;
+    color: var(--gris);
+    margin-top: 10px;
+}
+
+.folder-info i {
+    font-size: 20px;
+    color: var(--red)
+}
+
+@media (min-width:768px) {
+    .user .form .col-auto {
+        display: flex;
+        width: 50%;
+        float: left;
+    }
+}

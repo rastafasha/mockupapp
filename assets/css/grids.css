@@ -1,0 +1,118 @@
+/*---nav tabs nuevo ---*/
+
+
+/*---grid gallery ---*/
+
+.navTabs {
+    display: grid;
+    gap: 10rem;
+    grid-auto-rows: 7rem;
+    grid-template-columns: repeat(auto-fill, minmax(calc(180px), 1fr));
+}
+
+.itemFav {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.featured {
+    grid-column: span 2;
+}
+
+.navTabs a,
+.navTabs a:hover {
+    text-decoration: none;
+}
+
+.navTabs a i {
+    font-size: 20px;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.navTabs a p {
+    font-size: 2vw;
+    display: flex;
+    text-align: center;
+}
+
+.noinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 30px;
+    background-color: var(--azul);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.noinfo img {
+    display: flex;
+    width: 10%;
+}
+
+.noinfo h2 {
+    color: #fff;
+}
+
+@media (max-width:668px) {
+    .navTabs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1fr;
+        gap: 2rem;
+        padding-bottom: 60px;
+    }
+    .navTabs a i {
+        font-size: 18px;
+    }
+    .navTabs a p {
+        font-size: 3vw;
+    }
+    .navTabs h2 {
+        font-size: 5vw;
+        padding: 0;
+        margin: 0;
+    }
+    .navTabs img {
+        display: flex;
+        flex-direction: row;
+        align-self: end;
+    }
+    .itemFav {
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+    }
+}
+
+@media(min-width: 768px) {
+    .navTabs {
+        display: grid;
+        gap: 8rem;
+        grid-auto-rows: 7rem;
+        grid-template-columns: repeat(2, minmax(calc(180px), 1fr));
+    }
+    .itemFav {
+        display: grid;
+        cursor: pointer;
+        grid-template-columns: repeat(2, minmax(calc(180px), 1fr));
+    }
+    .itemFav h2,
+    .itemFav p {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+    }
+    .itemFav .div1 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+    .navTabs img {
+        display: flex;
+        width: 100%;
+    }
+}
