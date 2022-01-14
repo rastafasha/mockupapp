@@ -139,87 +139,69 @@
 
                         <div class="post-inner">
 
-                            <div class="group itemFav shadow orden-depedido">
-                                <div class="div1pagocon">
-                                    <h2>Current Order</h2>
-                                    <p>John Doe.</p>
+                            <div class="shadow">
+                                <h2>Shopping Bill</h2>
+
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>Shipping fee</td>
+                                            <td align="right">$5.43</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Discount 10%</td>
+                                            <td align="right">-$1.89</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Price Total</td>
+                                            <td align="right">$84.82</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>Total</td>
+                                            <td align="right">$88.36</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <br><br>
+
+                            <fieldset>
+                                <legend>Payment Method</legend>
+
+                                <div class="form__radios ">
+                                    <div class="form__radio shadow">
+                                        <label for="visa">
+                                        <svg class="icon">
+                                            <use xlink:href="#icon-visa" />
+                                        </svg>Visa Payment
+                                        </label>
+                                        <input checked id="visa" name="payment-method" type="radio" />
+                                    </div>
+                                    <div class="form__radio shadow">
+                                        <label for="paypal">
+                                            <svg class="icon">
+                                            <use xlink:href="#icon-paypal" />
+                                            </svg>PayPal
+                                        </label>
+                                        <input id="paypal" name="payment-method" type="radio" />
+                                    </div>
+                                    <div class="form__radio shadow">
+                                        <label for="mastercard">
+                                            <svg class="icon">
+                                                <use xlink:href="#icon-mastercard" />
+                                            </svg>Master Card
+                                        </label>
+                                        <input id="mastercard" name="payment-method" type="radio" />
+                                    </div>
+                                    <a class="btn btn-success" href="wallet-payment.html">
+                                        pagar
+                                    </a>
                                 </div>
-                                <hr>
-                                <div class="recibo">
-                                    <!--header-->
-                                    <div class="div1recibo">
-                                        Desc
-                                    </div>
-                                    <div class="div2recibo">
-                                        Category
-                                    </div>
-                                    <div class="div3recibo">
-                                        Price
-                                    </div>
-                                    <!--content-->
-                                    <div class="div4recibo">
-                                        Reservation to bussines
-                                    </div>
-                                    <div class="div5recibo">
-                                        Any Category
-                                    </div>
-                                    <div class="div6recibo">
-                                        $49.00
-                                    </div>
-                                    <!--total-->
-
-                                    <div class="div7recibo">
-                                        <p>Sub Total</p>
-                                    </div>
-                                    <div class="div8recibo">
-                                        <h3>$49.00</h3>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <h5>Payment Method</h5>
-                            <div class="paggrop">
-                                <a href="wallet-payment.html">
-                                    <div class="group itemFav shadow">
-                                        <div class="fa fa-paypal"></div>
-                                        <div class="div1pagocon">
-                                            <p>John Doe.</p>
-                                            <p>Johndoe@gmail.com</p>
-                                            <p>Pay with: Paypal</p>
-
-                                        </div>
-                                    </div>
-                                </a>
-
-                                <a href="wallet-payment.html">
-                                    <div class="group itemFav shadow">
-                                        <div class="fa fa-credit-card"></div>
-                                        <div class="div1pagocon">
-                                            <p>John Doe.</p>
-                                            <p>Johndoe@gmail.com</p>
-                                            <p>Pay with: Credit Card</p>
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="wallet-payment.html">
-                                    <div class="group itemFav shadow">
-                                        <div class="fa fa-money"></div>
-                                        <div class="div1pagocon">
-                                            <p>John Doe.</p>
-                                            <p>Johndoe@gmail.com</p>
-                                            <p>Pay with: Bank Transfer</p>
-                                        </div>
-                                    </div>
-
-                                </a>
-                            </div>
+                            </fieldset>
 
 
-
-                            <div class="botonera">
-                                <div class="button btn-simple-gray">Editar</div>
-                                <div class="button btn-full-red">Agregar</div>
-                            </div>
 
                         </div>
 
