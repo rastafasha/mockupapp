@@ -128,7 +128,7 @@
 
                         <a href="wallet.html">
                             <div class="back">
-                                <i class="fa fa-arrow-left"></i>
+                                <i class="fa fa-chevron-left"></i>
                                 <h1>Wallet | Actual Order</h1>
                             </div>
                         </a>
@@ -145,59 +145,75 @@
                                 <table>
                                     <tbody>
                                         <tr>
-                                            <td>Shipping fee</td>
-                                            <td align="right">$5.43</td>
+                                            <td>Service Name</td>
+                                            <td align="right">$49.00</td>
                                         </tr>
                                         <tr>
-                                            <td>Discount 10%</td>
-                                            <td align="right">-$1.89</td>
+                                            <td>Tasa App 1%</td>
+                                            <td align="right">$4.00</td>
                                         </tr>
                                         <tr>
                                             <td>Price Total</td>
-                                            <td align="right">$84.82</td>
+                                            <td align="right">$53.00</td>
                                         </tr>
                                     </tbody>
-                                    <tfoot>
+
+                                    <tfoot style="border-top: 1px solid #ccc; height: 50px;">
                                         <tr>
                                             <td>Total</td>
-                                            <td align="right">$88.36</td>
+                                            <td align="right">$53.00</td>
                                         </tr>
                                     </tfoot>
                                 </table>
                             </div>
-                            <br><br>
-
+                            <br>
                             <fieldset>
                                 <legend>Payment Method</legend>
 
+
+
                                 <div class="form__radios ">
-                                    <div class="form__radio shadow">
-                                        <label for="visa">
-                                        <svg class="icon">
-                                            <use xlink:href="#icon-visa" />
-                                        </svg>Visa Payment
-                                        </label>
-                                        <input checked id="visa" name="payment-method" type="radio" />
-                                    </div>
-                                    <div class="form__radio shadow">
+
+                                    <div class=" form__radio shadow ">
                                         <label for="paypal">
-                                            <svg class="icon">
-                                            <use xlink:href="#icon-paypal" />
-                                            </svg>PayPal
+                                            <i class="fa fa-paypal"></i>
+                                            PayPal 
                                         </label>
-                                        <input id="paypal" name="payment-method" type="radio" />
+                                        <input data-bs-toggle="modal" data-bs-target="#payment" class="form-check-input" type="radio" name="paypal" id="paypal">
                                     </div>
-                                    <div class="form__radio shadow">
-                                        <label for="mastercard">
-                                            <svg class="icon">
-                                                <use xlink:href="#icon-mastercard" />
-                                            </svg>Master Card
+                                    <div class=" form__radio shadow ">
+                                        <label for="stripe">
+                                            <i class="fa fa-cc-stripe"></i>
+                                            Stripe
                                         </label>
-                                        <input id="mastercard" name="payment-method" type="radio" />
+                                        <input data-bs-toggle="modal" data-bs-target="#payment" class="form-check-input" type="radio" name="stripe" id="stripe">
                                     </div>
+                                    <div class=" form__radio shadow ">
+                                        <label for="pagoMovil">
+                                            <i class="fa fa-calculator"></i>
+                                            Pago Móvil
+                                        </label>
+                                        <input data-bs-toggle="modal" data-bs-target="#payment" class="form-check-input" type="radio" name="pagoMovil" id="pagoMovil">
+                                    </div>
+                                    <div class=" form__radio shadow ">
+                                        <label for="transfB">
+                                            <i class="fa fa-bank"></i>
+                                            Transferencia bancaria
+                                        </label>
+                                        <input data-bs-toggle="modal" data-bs-target="#payment" class="form-check-input" type="radio" name="transfB" id="transfB">
+                                    </div>
+
+
+
                                     <a class="btn btn-success" href="wallet-payment.html">
                                         pagar
                                     </a>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <br>
                                 </div>
                             </fieldset>
 
@@ -289,3 +305,65 @@
 </script>
 
 </html>
+
+<!-- Modal -->
+<div class="modal  animated fadeInUp" id="payment" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <a href="#" data-bs-dismiss="modal" class="">
+
+                    <div class="barratop"></div>
+                </a>
+                <h3>Payment form</h3>
+
+                <div class="form">
+                    <form action="">
+                        <div class="col-auto mb-2">
+                            <select name="" id="" class="form-control form-control-md">
+                                <option value="0">Bank</option>
+                                <option value="0">Bank 1</option>
+                                <option value="0">Bank 2</option>
+                                <option value="0">Bank 3</option>
+                                <option value="0">Bank 4</option>
+                            </select>
+                        </div>
+                        <div class="col-auto mb-2">
+                            <input class="form-control form-control-md" type="text" placeholder="bank transfer" aria-label=".form-control-lg example">
+                        </div>
+                        <div class="col-auto mb-2">
+                            <input class="form-control form-control-md" type="text" placeholder=" name" aria-label=".form-control-lg example">
+                        </div>
+
+
+                        <div class="col-auto mb-2">
+                            <input class="form-control form-control-md" type="text" placeholder="Email" aria-label=".form-control-lg example">
+                        </div>
+                        <div class="col-auto mb-2">
+                            <input class="form-control form-control-md" type="text" placeholder="Phone number" aria-label=".form-control-lg example">
+                        </div>
+
+
+
+                    </form>
+                </div>
+
+            </div>
+            <div class="modal-footer footer-modal">
+
+                <div class="botonera">
+                    <div class="div1">
+                        <button type="button" class="btn btn-simple-gray" data-bs-dismiss="modal">Cancel</button>
+
+                    </div>
+                    <div class="div2">
+                        <button type="button" class="btn btn-full-red" data-bs-dismiss="modal">Pay</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

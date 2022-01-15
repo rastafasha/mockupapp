@@ -58,23 +58,8 @@
     color: black;
 }
 
-.lawyer-profile a .group .info h2,
-.lawyer-profile .group .info {
-    font-size: 4vw;
-    color: black;
-    margin: 0;
-    padding: 0;
-    padding-left: 5px;
-    text-align: left;
-}
 
-.lawyer-profile a .group .info h3 {
-    font-size: 4vw;
-    color: black;
-    margin: 0;
-    padding: 0;
-    padding-left: 5px;
-}
+/* recibo grid */
 
 .recibo {
     display: grid;
@@ -146,7 +131,7 @@ tbody {
 }
 
 td {
-    padding-block: 0.125em;
+    padding: 5px 15px 0px 5px;
 }
 
 tfoot {
@@ -195,6 +180,35 @@ tfoot {
     fill: currentColor;
     inline-size: 1em;
     vertical-align: middle;
+}
+
+
+/*---ordenes recientes----*/
+
+.ordenes {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.ordenes img {
+    width: 80%;
+    padding: 5px;
+    border: 1px solid rgb(231, 231, 231);
+    background-color: #fafafa;
+    border-radius: 13px;
+    box-shadow: 0px 7px 10px #e3e2e2;
+}
+
+.div1-order {
+    grid-area: 1 / 2 / 3 / 3;
+    align-self: center;
+    text-align: right;
 }
 
 @media(min-width:768px) {

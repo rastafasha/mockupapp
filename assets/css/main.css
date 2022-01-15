@@ -21,7 +21,6 @@
 
 /*--swiffy slider--*/
 
-@import url("font-awesome.min.css");
 @import url("font-awesome.css");
 @import url("normalize.css");
 @import url("reset.css");
@@ -40,6 +39,7 @@
 @import url("modal.css");
 @import url("shared.css");
 @import url("lawyer-profile.css");
+@import url("wallet.css");
 @import url("pricing.css");
 
 /*--------------------------------------------------------------
